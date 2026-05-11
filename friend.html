@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bestie!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe4e1;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: inline-block;
+            max-width: 80%;
+        }
+        h1 { color: #ff69b4; }
+        p { color: #555; font-size: 1.2rem; }
+        
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+
+        #surprise {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 2px dashed #ff69b4;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey Friend! 👋</h1>
+        <p>Mere paas tumhare liye ek special message hai...</p>
+        
+        <button onclick="showSurprise()">Click Here to See! ✨</button>
+
+        <div id="surprise">
+            <h2 style="color: #ff1493;">You are the Best! ❤️</h2>
+            <p>Sanjana ki taraf se ye chota sa surprise tumhare liye! Thanks for being my friend.</p>
+            <p>🌟 ✨ 🎈</p>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+            alert("Surprise! 🎉");
+        }
+    </script>
+
+</body>
+</html>
